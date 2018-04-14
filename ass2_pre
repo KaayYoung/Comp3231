@@ -18,4 +18,11 @@
 8.In what file are copyin() and copyout() defined? memmove()? Why can't copyin() and copyout() be implemented as simply as memmove()?
       //copyin() and copyout() are defined in copyinout.c and memmove() is defined in memmove.c. 
       //copyin()/copyout() copies block of memory across user/kernel addresses ensuring that user pointers are not accessing offlimit addresses, something that memmove() is not capable of doing
-9.
+9.How are vfs_open, vfs_close used? What other vfs_() calls are relevant?
+      // vfs_open will destory path name
+10.What are VOP_READ, VOP_WRITE? How are they used?
+      
+11.What does VOP_ISSEEKABLE do?
+      // Check if this file is seekable. All regular files and directories are seekable, but some devices are not
+12.Where is the struct thread defined? What does this structure contain
+      
